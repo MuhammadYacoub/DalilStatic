@@ -66,7 +66,7 @@ function renderCards(data) {
             data-name="${emp.Name.toLowerCase()}"
             onclick="showDetails(${emp.ConsultantID})">
             <div class="contact-card">
-                <img src="assets/images/coun/${emp.ConsultantID}.jpg" 
+                <img src="assets/images/Coun/${emp.ConsultantID}.webp" 
                      alt="${emp.Name}" 
                      class="employee-photo"
                      loading="lazy"
