@@ -180,7 +180,7 @@ function showDetails(id) {
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <img src="assets/images/coun/${id}.jpg" 
+                    <img src="assets/images/Coun/${id}.jpg" 
                          alt="${employee.Name}" 
                          loading="lazy"
                          class="fixed-size-image"
