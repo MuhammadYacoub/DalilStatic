@@ -1,7 +1,7 @@
 // ========== Global Variables ==========
 let employees = [];
 const CACHE_KEY = 'employeesCache';
-const CACHE_DURATION = 3600000; // 1 ساعة
+const CACHE_DURATION = 1800000; // نصف ساعة
 
 // ========== Initialization ==========
 document.addEventListener('DOMContentLoaded', () => {
@@ -66,10 +66,10 @@ function renderCards(data) {
             data-name="${emp.Name.toLowerCase()}"
             onclick="showDetails(${emp.ConsultantID})">
             <div class="contact-card">
-                <img src="assets/images/coun/${emp.ConsultantID}.webp" 
+                <img src="assets/images/coun/${emp.ConsultantID}.jpg" 
                      alt="${emp.Name}" 
                      class="employee-photo"
-                     onerror="this.src='assets/images/logo.webp';">
+                     onerror="this.src='assets/images/logo.png';">
                 <div class="employee-info">
                     <h3>${emp.Name}</h3>
                     <p>${emp.CurrentRankID} - الأقدمية: ${emp.TimeRank}</p>
@@ -162,7 +162,7 @@ function setupLoginModal() {
         const username = document.getElementById('username').value;
         const password = document.getElementById('password').value;
         
-        if (username === 'admin' && password === 'admin123') {
+        if (username === '1' && password === '1') {
             modal.hide();
         } else {
             alert('بيانات الدخول غير صحيحة!');
@@ -179,10 +179,10 @@ function showDetails(id) {
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <img src="assets/images/coun/${id}.webp" 
+                    <img src="assets/images/coun/${id}.jpg" 
                          alt="${employee.Name}" 
                          class="fixed-size-image"
-                         onerror="this.src='assets/images/logo.webp'">
+                         onerror="this.src='assets/images/logo.png'">
                 </div>
                 <div class="col-md-8">
                     <h2>${employee.Name}</h2>
