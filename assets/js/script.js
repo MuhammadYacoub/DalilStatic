@@ -69,6 +69,7 @@ function renderCards(data) {
                 <img src="assets/images/coun/${emp.ConsultantID}.jpg" 
                      alt="${emp.Name}" 
                      class="employee-photo"
+                     loading="lazy"
                      onerror="this.src='assets/images/logo.png';">
                 <div class="employee-info">
                     <h3>${emp.Name}</h3>
@@ -181,6 +182,7 @@ function showDetails(id) {
                 <div class="col-md-4">
                     <img src="assets/images/coun/${id}.jpg" 
                          alt="${employee.Name}" 
+                         loading="lazy"
                          class="fixed-size-image"
                          onerror="this.src='assets/images/logo.png'">
                 </div>
